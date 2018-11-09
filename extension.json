@@ -9,8 +9,12 @@
 		"HeaderFooter": "HeaderFooter.class.php"
 	},
 	"Hooks": {
-		"OutputPageParserOutput": [
-			"HeaderFooter::hOutputPageParserOutput"
+		"OutputPageParserOutput": "HeaderFooter::hOutputPageParserOutput",
+		"ResourceLoaderGetConfigVars": "HeaderFooter::onResourceLoaderGetConfigVars"
+	},
+	"MessagesDirs": {
+		"HeaderFooter": [
+			"i18n"
 		]
 	},
 	"manifest_version": 1

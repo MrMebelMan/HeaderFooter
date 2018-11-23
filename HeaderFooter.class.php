@@ -14,7 +14,7 @@ class HeaderFooter
 			return true;
 		}
 
-		$title = $op->getTitle();
+		$title = $op->getSkin()->getTitle();
 		if ( $title->isRedirect() ) {
 			$article = Article::newFromID( $title->getArticleID() );
 			$title = $article->getRedirectTarget();
